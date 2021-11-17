@@ -2,6 +2,7 @@
 import './App.css';
 import Home from './components/Home';
 import UseMe from "./components/Aboutus";
+import Welcome from './components/Welcome';
 function App() {
   return (
     <>
@@ -9,6 +10,7 @@ function App() {
         <h3>Component</h3>
       <Home/>
       <UseMe/>
+      <Welcome/>
     </>
   );
 }
