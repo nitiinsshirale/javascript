@@ -1,5 +1,6 @@
 import React from "react";
 import Details from "./Details";
+import Project from "./Project";
 
 export default class Welcome extends React.Component{
     // constructor(props){
@@ -54,6 +55,8 @@ export default class Welcome extends React.Component{
             { this.state.message !== 'Start'? <Details message={this.state.message} 
             // passing event handler to get info from child
             handleData={this.handleDataFromDetails} /> : ''}
+
+            <Project/>
         </>
     }
 }
