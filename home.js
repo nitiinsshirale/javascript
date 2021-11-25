@@ -46,14 +46,13 @@ for (const item of countries.entries()) {
     console.log(item)
 }
 function getUserInfo(event) {
-    console.log(event.value);
+    console.log(event);
     //document.getElementById('userName').innerText = 'Hola I was changed from JS'  
     //document.getElementById('userName').innerHTML = '<span><h2>Oops I had missed it </h2></span>';
     fetch(`https://api.github.com/users/${event.value}`)
     .then(res=>res.json())
     .then(data=> {
-                console.log('Fetch Called');
-                console.log('Github Username :',data.login);
+                //console.log('Fetch Called');
                 document.getElementById('userName').innerHTML = `
                 <table>
                     <tr>

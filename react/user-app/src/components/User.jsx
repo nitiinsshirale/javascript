@@ -2,10 +2,8 @@ import { useEffect, useState } from 'react';
 import '../App.css';
 import AddUser from './AddUser';
 import {users as userData} from "../data/users";
-
 const User = (props)=>{
     const [users, setUsers] = useState([]);
-
     // on load function
     useEffect(()=>{
         setUsers(userData);
@@ -14,6 +12,7 @@ const User = (props)=>{
     const handleAddUser = (_newUser) => {
         setUsers([...users,_newUser])
     }
+    
     return <>
         <h3>User Component</h3>
          { /** render list of users  */}
